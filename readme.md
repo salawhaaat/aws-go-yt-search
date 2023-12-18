@@ -2,6 +2,8 @@
 
 This AWS Lambda project, developed in Go, utilizes API Gateway to handle HTTP requests for YouTube video searches. The Lambda function processes both GET and POST requests, providing a versatile interface for users to search and obtain YouTube video links.
 
+https://uc1av5kjik.execute-api.eu-north-1.amazonaws.com/prod/search
+
 Project Structure
 Main Package (main.go):# AWS Lambda Go YouTube Search
 
@@ -39,10 +41,6 @@ This AWS Lambda project, developed in Go, utilizes API Gateway to handle HTTP re
 ## Deployment
 
 The project is designed to be deployed using the Serverless Framework. The `serverless.yml` file defines the AWS Lambda function and its associated API Gateway endpoints.
-
-## Configuration
-
-To configure the project, update the `config.toml` file with your YouTube Data API endpoint and API key.
 
 ## Build and Deploy
 
