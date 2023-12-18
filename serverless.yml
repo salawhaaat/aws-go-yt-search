@@ -1,0 +1,21 @@
+service: yt-search-post
+frameworkVersion: ">=1.28.0"
+provider:
+  name: aws
+  runtime: go1.x
+  region: eu-north-1
+  stage: ${opt:stage}
+functions:
+  api:
+    handler: bin/main
+    events:
+      - http:
+          path: /search
+          method: GET
+      - http:
+          path: /search
+          method: POST
+package:
+  patterns:
+    - "!*/**"
+    - bin/main
